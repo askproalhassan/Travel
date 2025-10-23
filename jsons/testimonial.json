@@ -1,0 +1,20 @@
+[
+    {
+        "images":"images/laught.png",
+        "words":"I'v been travling for more than 10 years now, I'v took flight for from many poeple but I'm glad to tell you this, <br> this poeple are awesome!!! ",
+        "name":"Mike Taylaor",
+        "country":"Lahone, Pakistan"
+    },
+    {
+        "images":"images/Fuseni.jpg",
+        "words":"Traveling with this agency was a fantastic experience! The staff was friendly and knowledgeable, and they helped me plan an itinerary that suited my interests perfectly. I can't wait to book my next trip with them!",
+        "name":"Mohammed Fuseni",
+        "country":"US, Washington"
+    },
+    {
+        "images":"images/Asana.jpg",
+        "words":"I had an amazing experience with this travel agency. They took care of every detail, from flights to accommodations, making my trip stress-free and enjoyable. Highly recommend! ",
+        "name":"Asana Mohammed",
+        "country":"Uk, Landon"
+    }
+]

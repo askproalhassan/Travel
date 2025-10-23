@@ -1,0 +1,23 @@
+[
+  {
+        "image":"images/Group 7.png",
+        "buttons":{
+                "name":"Choose",
+                "lorem":"Choose of your perference which place you like the most <br> and enjoy the best flight"
+        } 
+    }, 
+  {
+        "image":"images/Group 11.png",
+        "buttons":{
+                "name":"Make Payment",
+                "lorem":"Make the best sueted payment for fast booking to prevent <br> any kind of miss happening"
+        } 
+    }, 
+  {
+        "image":"images/Group 12.png",
+        "buttons":{
+                "name":"Reach Airport on selected Date",
+                "lorem":"You can reach airport on time on selected date  and enjoy your  flight on the way to your destination"
+        } 
+    }
+]
