@@ -155,13 +155,17 @@
         margin-left: unset; 
     }
     .booking-left{
-        width: fit-content;
+        width: 100%;
+    
     }
     .booking-right{
         position: relative;
         width: fit-content;
         margin-left: 19px;
 
+    }
+    #booking-list{
+        border: 1px;
     }
      .easy{
         text-align: center;
@@ -174,14 +178,39 @@
         font-size: 13px;
     }
     .view{
-        width: 300px;
+        width: 260px;
+        position: relative;
+    }
+    .pop-up{
+        padding: 10px 5px 15px 5px;
+        right: 0;
+        bottom: 80px;
+        right: -30px;
+
+    }
+    .onboard{
+        gap: 100px;
     }
     .view-img{
-        width: 301px;
+        width: 260px;
+    }
+    .temple{
+        width: 30px;
+        height: 30px;
+    }
+    .ongoin{
+        font-size: 12px;
+    }
+    .trip-to{
+        font-size: 15px;
+    }
+    .persentage{
+        font-size: 12px;
+        top: 5px;
     }
     .testimonials{
         margin-top: 200px;
-        
+        margin-left: 0;
     }
     .layers{
         display: flex;
@@ -199,11 +228,14 @@
     .what-poeple{
         font-size: 40px;
     }
+    .btn-change{
+        margin-left: 50px;
+    }
     .testimonial-cards{
         width: 370px;
         height: 260px;
         overflow: hidden;
-        margin-left: 0px;
+        margin-left: 50px;
         right: 50px;
     }
     #all-into{
@@ -214,7 +246,8 @@
         margin-left: unset;
         left: 50px;
         right: 0; 
-    }#page{
+    }
+    #page{
         margin-top: 10px;
     }
     #page-name{
@@ -231,12 +264,12 @@
         z-index: 1;
     }
     .supportedimg{
-        gap: 10px;
+        gap: 7px;
         justify-content: flex-start;
         margin-left: -50px;
     }
     .supportedimg img{
-        width: 67px;
+        width: 65px;
     }
     .subscribe{
         width: 370px;
@@ -264,6 +297,10 @@
         font-size: 13px;
         border-radius: 5px;
     }
+    .bxl-telegram{
+        bottom: -627%;
+        font-size: 20px;
+    }
     .round{
         display: none;
     }
@@ -273,7 +310,7 @@
 
     /* footer */
     footer{
-        width: 100%;
+        width: 95%;
         margin-left: unset;
         margin-top: 10px;
         background: rgb(48, 54, 71);

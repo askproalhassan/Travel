@@ -470,6 +470,7 @@ button.play:hover{
     color: rgb(0, 17, 255);
     font-size: 30px;
     cursor: pointer;
+    padding: 4px 2px 2px 2px;
     
 }
 .pop-up{
