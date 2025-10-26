@@ -39,19 +39,20 @@ const cardsing = ()=>{
 };cardsing();
 
 //-------------------------------------view poiint styling --------------------------
-//  const observer = new  IntersectionObserver(entries =>{
-//     entries.forEach(enter=>{
-//         if(enter.isIntersecting){
-//             enter.target.classList.add('scale-up')
-//         }else{
-//             enter.target.classList.remove('scale-up')
-//         }
-//     })
+function faderUp(){
+    const hotel = document.querySelectorAll('.hotels')
 
-//     cardList.forEach(element =>{
-//         observer.observe(element);  
-//     })
-//  })
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('fade-up')
+            }
+        })
+    })
+    hotel.forEach(element=>{
+        observer.observe(element)
+    })
+}faderUp();
 
 
 
@@ -119,7 +120,6 @@ function BookingCard(){
     .then(dataFile => {
             const booking =  document.querySelector('.booking-cards');
             dataFile.forEach(book =>{
-
                 const bookList = document.createElement('div');
                 const buttonsInfor = book.buttons[0]
                 bookList.id = "booking-list"
@@ -127,7 +127,7 @@ function BookingCard(){
 
                  bookList.innerHTML =
                     `<img src="${book.image}" alt="img" class="booking-icon"> 
-                    <div class="write">
+                    <div class="write"  >
                         <h4 class="choose">${book.buttons.name}</h4>
                         <p class="choose-discription"> ${book.buttons.lorem}</p> 
                      </div>`
@@ -136,18 +136,18 @@ function BookingCard(){
 
             })
         })
+        
         .catch(error=>{console.error(error)})
        
 };BookingCard()
 
 // --------------------linking booking card to their respective place
 const joinkingCardsTOLinks = ()=>{
-    const booking =  document.querySelectorAll('.booking-cards');
-    console.log(booking)
-    booking.forEach((element,index)=>{
+    const booking =  document.querySelectorAll('.booking');
+    dataFile.forEach((element,index)=>{
         if(index === 0){
             element.addEventListener('click',()=>{
-                element.innerHTML='<a href="choose/choose.html">fsfe</a>';
+                window.location.href = "choose/choose.html";
             })
         }
     })
