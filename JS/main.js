@@ -137,11 +137,23 @@ function BookingCard(){
             })
         })
         .catch(error=>{console.error(error)})
+       
 };BookingCard()
 
+// --------------------linking booking card to their respective place
+const joinkingCardsTOLinks = ()=>{
+    const booking =  document.querySelectorAll('.booking-cards');
+    console.log(booking)
+    booking.forEach((element,index)=>{
+        if(index === 0){
+            element.addEventListener('click',()=>{
+                element.innerHTML='<a href="choose/choose.html">fsfe</a>';
+            })
+        }
+    })
+};joinkingCardsTOLinks();
+
 //----------- making mouse over to display pop up
-
-
 const popUp = document.querySelector('.pop-up');
 const heart = document.querySelector('.bx-heart');
 

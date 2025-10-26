@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- navigation -->
+         <nav>
+            <div class="logo">Jad <span class="color">o</span><span class="color">o</span> </div>
+            <ul class="nav-links">
+                <li><a href="/index.html#destination">Destination</a></li>
+                <li><a href="/index.html#hotel">Hotels</a></li>
+                <li><a href="/index.html#flight">Flight</a></li>
+                <li><a href="/index.html#booking">Bookings</a></li>
+            </ul>
+         
+            <div class="language">
+                <select>
+                    <option value="EN">EN</option>
+                    <option value="TWI">TWI</option>
+                    <option value="DAGOMBA">GA</option>
+                </select>
+            </div>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <!---------------------- container ----------------------->
+        <div class="container">       
+            <!-- slider colunm -->
+            <div class="slider">
+                <div class="filter">
+                    <h3 class="ft">Filters</h3>
+                    <div class="collections">
+                        <h3 class="ct">
+                            collections <i class='bx bx-chevron-up'></i>
+                            <ul class="dropdown">
+                                <li><a href="#culture">culture(23)</a></li>
+                                <li><a href="#water">Water Adventures(40)</a></li>
+                                <li><a href="#Sport">Sport Shows(32)</a></li>
+                                <li><a href="#Adventures">Adventures(20)</a></li>
+                                <li><a href="#mountains">Mountains & Hills(13)</a></li>
+                            </ul>
+                        </h3>
+                    </div>
+                </div>
+                <!-- person profile -->
+                <div class="person">
+                    <img src="images/Fuseni.jpg" alt="me" class="me">
+                    <h4 class="Fname">Later do 😊</h4>
+                 </div>
+                 <!-- log in  -->
+                <div class="user">
+                    <div class="logs">
+                        <button class="setting"><i class='bx bx-cog'></i> Setting </button>
+                        <button class="Logout"><i class='bx bx-log-out'></i> Logout</button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- content colunm -->
+            <div class="content">
+                <!-- head line -->
+                <div class="header">
+                    <h4 class="price">Price <i class='bx bx-chevron-up'></i>
+                    
+                        <ul class="price-dropdown">
+                            <li><a href="#">Low to Hight</a></li>
+                            <li><a href="#">Hight to Low</a></li>
+                        </ul>
+                    </h4>
+                    <div class="sort">
+                        <h3 class="sort-by">SORT BY</h3>
+                        <select name="" id="select">
+                            <option value="Relevant">Newer</option>
+                            <option value="Popularity">Popularity</option>
+                            <option value="Rating">Rating</option>
+                            <option value="Discount">Discount</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- places -->
+                <div class="main-work">
+
+                    <!-- filters -->
+                    <div class="culture" id="culture">
+                        <h3 class="titled"><em>Culture</em></h3>
+                        <div class="cultured">
+
+                        </div>
+                    </div>
+                    <!-- filter 2 -->
+                    <div class="water" id="water">
+                         <h3 class="titled"><em>Water Adventures</em></h3>
+                        <div class="water-adventure">
+
+                        </div>
+                    </div>
+                    <!-- filter 3 -->
+                    <div class="Sport" id="Sport">
+                         <h3 class="titled"><em>Sport</em></h3>
+                        <div class="Sport-product">
+
+                        </div>
+                    </div>
+                    <!-- filter 3 -->
+                    <div class="Adventures" id="Adventures">
+                         <h3 class="titled"><em>Mountains</em></h3>
+                        <div class="mountains-product">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="choose-main.js"></script>
+</body>
+</html>

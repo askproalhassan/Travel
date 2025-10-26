@@ -166,6 +166,7 @@
     }
     #booking-list{
         border: 1px;
+        width: 100%;
     }
      .easy{
         text-align: center;

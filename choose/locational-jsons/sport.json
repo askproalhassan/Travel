@@ -1,0 +1,92 @@
+[
+        {
+        "images":"images/sport-images/1.jpeg",
+        "country":[
+            {
+                "Cname":"Indian,New Delhi",
+                "price":"$1,42k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"10 Days Trip"
+            }
+        ]
+    },
+        {
+        "images":"images/sport-images/2.jpeg",
+        "country":[
+            {
+                "Cname":"Zealand,Auckland",
+                "price":"$3,42k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"20 Days Trip"
+            }
+        ]
+    },
+        {
+        "images":"images/sport-images/4.jpeg",
+        "country":[
+            {
+                "Cname":"Mali,Italy",
+                "price":"$42k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"5 Days Trip"
+            }
+        ]
+    },
+        {
+        "images":"images/sport-images/3.jpeg",
+        "country":[
+            {
+                "Cname":"Canada,Toronto",
+                "price":"$1,10k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"27 Days Trip"
+            }
+        ]
+    },
+        {
+        "images":"images/sport-images/4.jpeg",
+        "country":[
+            {
+                "Cname":"Brazil,Rio",
+                "price":"$2,42k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"30 Days Trip"
+            }
+        ]
+    },{
+        "images":"images/sport-images/6.jpeg",
+        "country":[
+            {
+                "Cname":"japan,Tokyo",
+                "price":"$2,42k"
+            }
+        ],
+        "days":[
+            {
+                "navigation":"<i class='bx bx-send' ></i>",
+                "NaNDays":"30 Days Trip"
+            }
+        ]
+    }
+    
+]

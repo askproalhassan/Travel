@@ -389,8 +389,9 @@ button.play:hover{
     width: 50%;
 }
 .write{
-    cursor: pointer;
+    cursor: pointer;   
 }
+
 .easy-book{
     font-size: 50px;
     color: #14183E;
@@ -407,8 +408,39 @@ button.play:hover{
    display: flex;
    align-items: center;
    gap: 30px;
+   position: relative;
    margin-top: 40px;
+   margin-left: 10px;
    cursor: pointer;
+   translate: all .6s ease;
+   width: 70%;
+   z-index: 1;
+
+}
+#booking-list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: o;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(40deg,yellow,rgb(26, 26, 11),rgb(224, 212, 212));
+    z-index: -1;
+    transition: all .6s ease;
+    border-radius: 7px;
+    padding: 10px 0px 10px;
+}
+#booking-list:hover::after{
+    width: 100%;
+}
+#booking-list:hover{
+    transform: scale(1.05);
+    .choose{
+        color: rgb(245, 235, 235);
+    }
+    .choose-discription{
+        color: rgb(230, 223, 223);
+    }
 }
 .choose{
     font-size: 16px;
