@@ -119,7 +119,7 @@ function BookingCard(){
     })
     .then(dataFile => {
             const booking =  document.querySelector('.booking-cards');
-            dataFile.forEach(book =>{
+            dataFile.forEach((book,numb) =>{
                 const bookList = document.createElement('div');
                 const buttonsInfor = book.buttons[0]
                 bookList.id = "booking-list"
@@ -131,27 +131,51 @@ function BookingCard(){
                         <h4 class="choose">${book.buttons.name}</h4>
                         <p class="choose-discription"> ${book.buttons.lorem}</p> 
                      </div>`
+                // --------------------linking booking card to their respective place
+                const popup = document.querySelector('.popup')
+                const logedin = document.querySelector('.logedin')
 
+                const bookings =  document.querySelectorAll('#booking-list,#booking-list,#booking-list');
+                bookings.forEach((bk,index)=>{
+                    console.log(bk)
+                    if(index === 0){
+                        bk.addEventListener('click',()=>{
+                            if(localStorage.getItem("mail") && localStorage.getItem("security")){
+                                window.location.href='/bookings-steps/choose/choose.html';
+                            }else{
+                            setTimeout(() => {
+                                        popup.style.visibility = 'visible';
+                                        logedin.innerHTML = "Register or login"; // clear message
+                                        // Hide popup again after 3 more seconds
+                                        setTimeout(() => {
+                                            popup.style.visibility = 'hidden';
+
+                                    }, 3000);
+                                }, 1000);
+                            }
+
+                        })
+                    }
+                })
+                        
                 booking.append(bookList)
-
             })
         })
+        
         
         .catch(error=>{console.error(error)})
        
 };BookingCard()
 
 // --------------------linking booking card to their respective place
-const joinkingCardsTOLinks = ()=>{
-    const booking =  document.querySelectorAll('.booking');
-    dataFile.forEach((element,index)=>{
-        if(index === 0){
-            element.addEventListener('click',()=>{
-                window.location.href = "choose/choose.html";
-            })
-        }
-    })
-};joinkingCardsTOLinks();
+// const joinkingCardsTOLinks = ()=>{
+//     bookings.forEach((element,index)=>{
+//         console.log(element)
+//        if(index === 0){
+//             element.windows.location.href='/bookings-steps/choose/choose.html'
+//        }
+//     })
+// };joinkingCardsTOLinks();
 
 //----------- making mouse over to display pop up
 const popUp = document.querySelector('.pop-up');
@@ -169,7 +193,6 @@ function hidePopUp(){
         popUp.style.transform='translateY(30px)';
         popUp.style.opacity='0.1';
 
-
     })
 
 };hidePopUp();
@@ -182,7 +205,6 @@ function liking(){
 
 const persentage =  document.querySelector('.persentage');
 const likes =  document.querySelector('.like');
-console.log(persentage)
 
 
 //-------------------- fetching testimonial json ----------------
@@ -241,3 +263,14 @@ const arrowUpAndDown = ()=>{
 
 };arrowUpAndDown();
 
+// replacing login and signup to profile
+
+function replacing(){
+   const login = document.querySelector('.login'); 
+   const signUp = document.querySelector('.signUp');
+   if(localStorage.getItem("profile") && localStorage.getItem("first")){
+        login.innerHTML = `<img class="myProfile" src="${localStorage.getItem("profile")}" alt='' >`
+        signUp.innerHTML = localStorage.getItem("first");
+        signUp.id = 'signup-btn';
+   }
+}replacing();

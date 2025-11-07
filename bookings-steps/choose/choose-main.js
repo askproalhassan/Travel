@@ -189,4 +189,13 @@ const cards = () =>{
 
 
 
-
+// linking name and image local storage
+function nameAndImage(){
+    const Profile = document.querySelector('.me');
+    const Myname = document.querySelector('.Fname');
+    if(localStorage.getItem('profile') && localStorage.getItem('first')){
+        
+        Profile.src = localStorage.getItem('profile');
+        Myname.innerText = localStorage.getItem('first');
+    }
+};nameAndImage();
