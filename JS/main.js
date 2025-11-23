@@ -306,6 +306,34 @@ const testimonialCards = document.querySelector('.testimonial-cards');
             })
 })
 
+function BookingCardAnimation(){
+    const bookingRight = document.querySelectorAll('.booking-right')
+    const bookingleft = document.querySelectorAll('.booking-left')
+
+    observer = new IntersectionObserver((entries) =>{
+        entries.forEach(enter =>{
+            if(enter.isIntersecting){
+                enter.target.classList.toggle('bookings-animation-left')
+            }
+        })
+    })
+    bookingleft.forEach(left=>{
+            observer.observe(left)
+        })
+    observer = new IntersectionObserver((entries) =>{
+        entries.forEach(enter =>{
+            if(enter.isIntersecting){
+                enter.target.classList.toggle('bookings-animation-right')
+            }
+        })
+    })
+    bookingRight.forEach(right=>{
+        observer.observe(right)
+    })
+   
+
+
+}BookingCardAnimation()
 
 
 
@@ -328,6 +356,23 @@ const arrowUpAndDown = ()=>{
 
 };arrowUpAndDown();
 
+// flight view point animation
+function flightAnimation(){
+        const flight = document.querySelectorAll('.flight');
+        console.log(flight)
+        const observer = new IntersectionObserver((entries) =>{
+            entries.forEach(enter =>{
+                if(enter.isIntersecting){
+                    enter.target.classList.add('flight-animation')
+                }
+            })
+
+        })
+        flight.forEach(element=>{
+            observer.observe(element)
+        })
+}flightAnimation()
+
 // replacing login and signup to profile
 
 function replacing(){
@@ -339,3 +384,4 @@ function replacing(){
         signUp.id = 'signup-btn';
    }
 }replacing();
+
