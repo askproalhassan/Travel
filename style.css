@@ -6,6 +6,7 @@
 .main{
     height: 200vh;
 }
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -911,7 +912,7 @@ footer{
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    background: rgb(236, 144, 144);
+    background: rgb(245, 240, 240);
     padding: 10px 10px;
     cursor: pointer;
     box-shadow: 0 0 5px rgb(197, 194, 194);
@@ -953,7 +954,7 @@ button.apps svg{
 
 
 .popup{
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 80px;
     border-radius: 7px;

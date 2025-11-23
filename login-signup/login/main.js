@@ -10,9 +10,21 @@ function fetching(){
                 miniImg.id = "mini-img";
                 miniImg.innerHTML = `<h3 class="Subtitle">${element.start}</h3>
                                     <img src="${element.images}" class="traveler">`
-            maxImg.append(miniImg)
-            changer.append(maxImg)
-        });
+                maxImg.append(miniImg)
+                changer.append(maxImg)
+            });
+
+            
+            // making images changes 
+            const imgs = document.querySelectorAll('#mini-img')
+            let index = 0;
+            setInterval(()=>{
+                imgs[index].style.display='none';
+                index = index + 1;
+                if(index === imgs.length) index = 0
+
+                imgs[index].style.display='block'
+            },4000)
         })
         .catch(error =>console.error(error));
 };fetching();
@@ -21,21 +33,21 @@ const switchingElement = () =>{
     const btns = document.querySelectorAll('.btns');
     const showImgs = document.querySelectorAll('.maxImg'); // assuming multiple elements with class 'max-img'
 
-    // selecting by botton
-    btns.forEach((el,ind)=>{
-        el.addEventListener('click',()=>{
-            showImgs.forEach(picture=>{
-                picture.style.visibility='hidden'
-            })
-            if(ind === 0){
-                showImgs[0].style.visibility = 'visible';
-            }
-            else if(ind === 1){
-                showImgs[0].style.visibility = 'visible';            }
-            else if(ind === 2){
-                showImgs[0].style.visibility = 'visible';            }
-        })
-    });
+    // // selecting by botton
+    // btns.forEach((el,ind)=>{
+    //     el.addEventListener('click',()=>{
+    //         showImgs.forEach(picture=>{
+    //             picture.style.visibility='hidden'
+    //         })
+    //         if(ind === 0){
+    //             showImgs[0].style.visibility = 'visible';
+    //         }
+    //         else if(ind === 1){
+    //             showImgs[0].style.visibility = 'visible';            }
+    //         else if(ind === 2){
+    //             showImgs[0].style.visibility = 'visible';            }
+    //     })
+    // });
   
 };switchingElement();
 
@@ -66,17 +78,21 @@ function hideAndshow(){
                         label.style.color= 'rgb(174, 176, 179)';
 
 
-                    }else if(input ==! ""){
-                        label.style.visibility = 'hidden'
+                    }else if(input.value !== ''){
+                        label.style.transform = 'translateY(-25px)'
+                        label.style.borderLeft = '1px solid black'
+                        label.style.borderRight = '1px solid black'
+                        label.style.padding = '0px 10px'
+                        label.style.background= 'white'
+                        label.style.color= 'rgb(174, 176, 179)';
                     }
-                    else{
+                    else if(input.value === ''){
                         label.style.transform = 'translateY(0)'
                         label.style.borderLeft = 'none'
                         label.style.borderRight = 'none'
                         label.style.padding = 'unset'
-                        label.style.color= 'black';
                         label.style.background= 'none'
-
+                        label.style.color= 'black';
                     }
                 })
             
@@ -94,7 +110,15 @@ function hideAndshow(){
                         label.style.background= 'white'
                         label.style.color= 'rgb(174, 176, 179)';
 
-                    }else{
+                    }        else if(input.value !== ''){
+                        label.style.transform = 'translateY(-25px)'
+                        label.style.borderLeft = '1px solid black'
+                        label.style.borderRight = '1px solid black'
+                        label.style.padding = '0px 10px'
+                        label.style.background= 'white'
+                        label.style.color= 'rgb(174, 176, 179)';
+                    }
+                    else if(input.value === ''){
                         label.style.transform = 'translateY(0)'
                         label.style.borderLeft = 'none'
                         label.style.borderRight = 'none'
@@ -118,7 +142,15 @@ function hideAndshow(){
                         label.style.background= 'white'
                         label.style.color= 'rgb(174, 176, 179)';
 
-                    }else{
+                    }        else if(input.value !== ''){
+                        label.style.transform = 'translateY(-25px)'
+                        label.style.borderLeft = '1px solid black'
+                        label.style.borderRight = '1px solid black'
+                        label.style.padding = '0px 10px'
+                        label.style.background= 'white'
+                        label.style.color= 'rgb(174, 176, 179)';
+                    }
+                    else if(input.value === ''){
                         label.style.transform = 'translateY(0)'
                         label.style.borderLeft = 'none'
                         label.style.borderRight = 'none'
@@ -142,7 +174,15 @@ function hideAndshow(){
                         label.style.background= 'white'
                         label.style.color= 'rgb(174, 176, 179)';
 
-                    }else{
+                    }else if(input.value !== ''){
+                        label.style.transform = 'translateY(-25px)'
+                        label.style.borderLeft = '1px solid black'
+                        label.style.borderRight = '1px solid black'
+                        label.style.padding = '0px 10px'
+                        label.style.background= 'white'
+                        label.style.color= 'rgb(174, 176, 179)';
+                    }
+                    else if(input.value === ''){
                         label.style.transform = 'translateY(0)'
                         label.style.borderLeft = 'none'
                         label.style.borderRight = 'none'

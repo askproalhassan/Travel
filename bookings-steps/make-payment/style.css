@@ -3,17 +3,25 @@
     padding: 0;
     font-family: 'Poppin',sans-serif;
 }
-
+body{
+    background: black;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
 nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: rgb(230, 230, 236);
+    background: rgb(55, 55, 56);
 }
 .logo{
     display: flex;
     margin-right: 710px;
     font-size: 2.9rem;
+    color: white;
 }
 .color{
     position: relative;
@@ -36,12 +44,43 @@ nav{
 .nav-links li{
     font-size: 17px;
     list-style: none;
-}.nav-links li a{
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 0px;
+    height: 3px;
+    background: rgba(255, 166, 0, 0.616);
+}
+.nav-links li a:hover::after{
+    width: 10px;
+    animation: scroller 3s linear infinite;
+}
+@keyframes scroller{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.nav-links li a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;
+    position: relative;
 }
 .nav-links li a:hover{
-    color: blue;
+    color: rgb(212, 207, 130);
 }
 .btn{
     display: flex;
@@ -68,4 +107,302 @@ select{
     padding: 2px 19px;
     background: transparent;
     border:none;
+}
+.profile{
+    display: flex;
+    gap: 20px;
+    margin-left: 0px;
+}
+.Myprofile{
+    border: 1px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.profileName{
+    font-size: 25px;
+    margin-top: 20px;
+}
+/* payments view */
+
+.payment-view{
+    display: flex;
+    width: 90%;
+    height: 170vh;
+    margin-left: 45px;
+}
+/* =============================left ============*/
+.left{
+    width: 60%;
+}
+/*============================ right============== */
+.right{
+    width: 40%;
+}
+
+
+
+/*================================== lift side =======================================*/
+.confirm{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Poppin',sans-serif;
+    margin-top: 10px;
+}
+.your-tour{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Poppin',sans-serif;
+    margin-top: 40px;
+}
+.dates{
+    width: 390px;
+    padding: 4px 10px;
+    margin-top: 12px;
+    border-radius: 7px;
+    background: rgb(49, 48, 48);
+}
+.date{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(221, 225, 228);
+}
+.days{
+    display: flex;
+    margin-top: 4px;
+    gap: 5px;
+    color: rgb(154, 156, 158);
+}
+.numb-of-travellers{
+    width: 390px;
+    padding: 4px 10px;
+    margin-top: 12px;
+    border-radius: 7px;
+    background: rgb(49, 48, 48);
+}
+.traveller{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(221, 225, 228);
+}
+.passenger{
+    margin-top: 4px;
+    color: rgb(154, 156, 158);
+    display: flex;
+    gap: 250px;
+}
+.passenger i{
+    font-size: 25px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+#number-inputs{
+    position: absolute;
+    width: 280px;
+    height: 34px;
+    left: 40%;
+    border-radius: 6px;
+    background: rgb(49, 48, 48);
+    border: 1px solid;
+    color: white;
+    z-index: 1;
+    visibility: hidden;
+}
+/* dark site */
+.dark{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -290px;
+    height: 180%;
+    background: rgba(24, 23, 23, 0.808);
+    z-index: 1;
+    visibility: hidden;
+}
+.cards{
+    margin-top: 30px;
+}
+.creadit{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Poppin',sans-serif;
+}
+.cards-list{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.cards-list img{
+    width: 48px;
+    padding: 1px 30px;
+    border-radius: 7px;
+    background: rgb(24, 22, 22);
+}
+.sample{
+    display: flex;
+    margin-left: -30px;
+}
+.sample img{
+    width: 400px;
+}
+.sample img:last-child{
+    width: 430px;
+    height: 275px;
+    margin-top: 30px;
+    margin-left: -60px;
+}
+
+
+/*<!-- Enter card input information  --> */
+.card-info{
+    margin-top: -40px;
+}
+.card-numb{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(221, 225, 228);
+}
+#number-input{
+    width: 390px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    background: transparent;
+    color: rgb(154, 156, 158);
+    border: 1px solid rgb(146, 144, 144);
+}
+
+.dates-info{
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+}
+.expiry{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(221, 225, 228);
+}
+.dates-info input{
+    width: 159px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    background: transparent;
+    color: rgb(154, 156, 158);
+    border: 1px solid rgb(146, 144, 144);
+}
+/* save btn */
+.save-btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.save{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(221, 225, 228);
+}
+
+.submit{
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: rgb(43, 144, 226);
+    color: white;
+    cursor: pointer;
+}
+
+/*============================= right side==================================== */
+.country-to-visit{
+    background: rgb(32, 32, 32);
+    border: 1px solid rgb(114, 111, 111);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 540px;
+    height: 100vh;
+}
+.country-name{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px;
+}
+.rating{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px;
+}
+span.review{
+    color: rgb(124, 120, 120);
+}
+.country-seleccted{
+    width: 430px;
+    height: 220px;
+    margin-left: 30px;
+    border-radius: 7px;
+}
+.bedrooms{
+    color: rgb(172, 170, 170);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.line{
+    width: 40%;
+    height: 2px;
+    background: rgb(54, 53, 53);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.check{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.in{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(154, 156, 158);
+
+}
+.fare-sum{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+h3.title{
+    font-size: 27px;
+    font-weight: 500;
+}
+.fares{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.prod,.total{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgb(232, 233, 235);
+}
+.total{
+    border: 1px solid;
+    padding: 8px 13px;
+    border-radius: 7px;
 }

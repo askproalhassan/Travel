@@ -1,0 +1,153 @@
+@media (max-width: 320px) and (max-width:479px),(max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left:0px;
+        width: 278px;
+        height: 150vh;
+        margin-top: 0;
+    }
+    body{
+    overflow: unset;
+}
+    /* left side */
+    .left{
+        height: 200px;
+        width:  550px;
+    }
+    .logo{
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    .color::after{
+        bottom: 6px;
+        left: 2px;
+        width: 7px;
+        height: 9px;
+    }
+    .plane{
+        width: 50px;
+        margin-top: -50px;
+        margin-left: 90px;
+    }
+    @keyframes float{
+    0%{
+        opacity: 0.5;
+        transform: translateY(500px);
+        width: 240px;
+        height: 340px;
+    }
+    40%,50%{
+         width: 240px;
+        height: 340px;
+        transform: rotate(90deg);
+
+    }
+    60%,70%{
+        width: 240px;
+        height: 340px;
+        transform: rotate(90deg);
+
+    }
+    80%,90%{
+        width: 240px;
+        height: 340px;
+        transform: rotate(90deg);
+
+    }
+    100%{
+        transform: rotate(90deg);
+        transform: translate(0);
+
+    }
+    
+
+    }
+    @keyframes float1{
+    0%{
+        opacity: 0.5;
+        transform: translateY(500px);
+        width: 240px;
+        height: 340px;
+    }
+    40%,50%{
+         width: 240px;
+        height: 340px;
+
+    }
+    60%,70%{
+        width: 240px;
+        height: 340px;
+
+    }
+    80%,90%{
+        width: 240px;
+        height: 340px;
+
+    }
+    100%{
+        transform: translate(0);
+
+    }
+    
+
+    }
+    .changer{
+        width: 350px;
+        height: 290px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .Subtitle{
+        font-size: 19px;
+    }
+    .traveler{
+        width: 200px;
+        height: 300px;
+    }
+    .btns{
+        display: none;
+    }
+    /* right side */
+    .right{
+    animation: float1 7s 1 ease;
+
+}
+
+    .sign-up{
+        margin-top: 40px;
+        
+    }
+    input{
+        width: 300px;
+        margin-left: -50px;
+    }
+    label{
+        margin-left: -20px;
+    }
+    .submit{
+        width: 330px;
+        margin-left: -50px;
+    }
+    .alternate{
+     margin-left: 55px;
+    }
+    .reviler .bx{
+        margin-left: 230px;
+
+    }
+    .popup{
+        width: 180px;
+        height: 40px;
+    }
+   .logedin{
+        color: rgb(95, 92, 92);
+        font-size: 15px;
+        margin-left: -45px;
+        font-family: 'Poppin',sans-serif;
+        font-weight: 400;
+    }
+    .dont-have{
+        font-size: 15px;
+    }
+}

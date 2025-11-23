@@ -1,3 +1,33 @@
+// navigation responsive
+const menu = document.querySelectorAll('.bx-menu,.bx-exit')
+const btnSigns = document.querySelector('.btn')
+const navList = document.querySelector('.nav-links')
+const colored= document.querySelector('.colored')
+
+function menuClick(){
+    menu.forEach((btns,numbs)=>{
+        if(numbs === 0){
+            btns.addEventListener('click',()=>{
+                btnSigns.style.display='flex'
+                navList.style.display='flex'; 
+                menu[0].style.display='none'
+                menu[1].style.display='flex'
+                colored.classList.add('expand')
+            })
+        } else if(numbs === 1){
+            btns.addEventListener('click',()=>{
+                btnSigns.style.display='none'
+                navList.style.display='none'
+                menu[0].style.display='flex'
+                menu[1].style.display='none'
+                colored.classList.remove('expand')
+
+            })
+        }
+    })
+
+}menuClick();
+
 // ----------------------------------------fetching cards product--------------------------
 
 const cardsing = ()=>{
@@ -144,6 +174,41 @@ function BookingCard(){
                                 window.location.href='/bookings-steps/choose/choose.html';
                             }else{
                             setTimeout(() => {
+                                        popup.style.visibility = 'visible';
+                                        logedin.innerHTML = "Register or login"; // clear message
+                                        // Hide popup again after 3 more seconds
+                                        setTimeout(() => {
+                                            popup.style.visibility = 'hidden';
+
+                                    }, 3000);
+                                }, 1000);
+                            }
+
+                        })
+                    }else if(index === 1){
+                            bk.addEventListener('click',()=>{
+                            if(localStorage.getItem("mail") && localStorage.getItem("security")){
+                                window.location.href='/bookings-steps/make-payment/make-payment.html';
+                            }else{
+                            setTimeout(() => {
+                                        popup.style.visibility = 'visible';
+                                        logedin.innerHTML = "Register or login"; // clear message
+                                        // Hide popup again after 3 more seconds
+                                        setTimeout(() => {
+                                            popup.style.visibility = 'hidden';
+
+                                    }, 3000);
+                                }, 1000);
+                            }
+
+                        })
+                    }else if(index === 2){
+                                 bk.addEventListener('click',()=>{
+                            if(localStorage.getItem("mail") && localStorage.getItem("security")){
+                                window.location.href='/bookings-steps/reach/reach.html';
+                            }else{
+                            setTimeout(() => {
+                                    alert('hello')
                                         popup.style.visibility = 'visible';
                                         logedin.innerHTML = "Register or login"; // clear message
                                         // Hide popup again after 3 more seconds

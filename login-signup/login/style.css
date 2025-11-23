@@ -327,7 +327,7 @@ input.image-input[type='file']::file-selector-button{
     background: #218838;
   }
   .popup{
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 80px;
     border-radius: 7px;

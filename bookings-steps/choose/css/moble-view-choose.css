@@ -1,0 +1,142 @@
+@media (max-width: 320px) and (max-width:479px),(max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: unset;
+        gap: 10px;
+    }
+    .logo{
+        font-size: 1.9rem;
+        margin: 0;
+    }
+    .color::after{
+        bottom: 5px;
+        left:2px;
+    }
+    .nav-links{
+        display: none;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 50px;
+        transition:all .9s ease;
+    }
+    .nav-links li a{
+        color: white;
+        
+    }
+    .btn{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+  
+    .btnSigns{
+        display: flex;
+    }
+    .Fname{
+        display: none;
+    }
+    .me{
+        width: 50px;
+        height: 50px;
+        margin-left: -30px;
+    }
+    .signUp{
+        padding: 2px 9px;
+    }
+    .signUp a{
+        color: rgb(255, 250, 250);
+    }
+    .language{
+        margin: auto;
+        margin-left: 280px;
+        display: none;
+    }
+    body{
+        overflow-X: hidden;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .menu i{
+        position: absolute;
+    }
+    .bx-menu{
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .bx-exit{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        transition: .3s ease;
+
+    }
+    /* slider */
+    .slider{
+        width: 20%;
+        
+    }
+    h3.filter{
+        display: none;
+    }
+    .bxss .bx{
+        display: flex;
+        margin-left: -20px;
+    }
+
+    /* header */
+    .header{
+        gap: 30px;
+        justify-content: flex-start;
+    }
+    .price{
+        font-size: 13px;
+        margin-top: 4px;
+    }
+    .price .bx-chevron-up{
+        font-size: 13px;
+    }
+    ul.price-dropdown{
+        font-size: 13px;
+        width: 90px;
+    }
+    .sort-by{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    #select{
+        font-size: 14px;
+        padding: 0;
+        margin-left: 10px;
+    }
+    /* .content */
+    #product{
+           width: 250px;
+        height: 320px;
+        margin-left: 20px;
+
+    }
+    .border{
+        width: 250px;
+        height: 150px;
+    }
+    .country-image{
+        width: 250px;
+        height: 320px;
+    }
+   
+    .cultured,.exploire,.mountain,.sport,.water{
+        grid-template-columns: 2fr;
+    }
+
+}

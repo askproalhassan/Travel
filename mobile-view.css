@@ -5,40 +5,106 @@
         justify-content: flex-end;
         align-items: unset;
         gap: 10px;
+   
     }
+    .navbar{
+        width: 100%;
+        overflow: hidden;
+        height: 159px;
+        position: absolute;
+    }
+
     .logo{
-       font-size: 1.9rem;
-       margin: 0;
+        font-size: 1.9rem;
+        margin: 0;
     }
     .color::after{
         bottom: 5px;
         left:2px;
     }
     .nav-links{
-        display: flex;
+        display: none;
         align-items: flex-end;
         flex-direction: column;
         gap: 10px;
         margin-right: 50px;
-        display: none;
+        transition:all .9s ease;
+    }
+    .nav-links li a{
+        color: white;
+        
     }
     .btn{
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 10px;
         align-items: flex-end;
         justify-content: flex-end;
-        margin-right: 50px;
-        display: none;
+        margin-right: 30px;
+    }
+  
+    .btnSigns{
+        display: flex;
     }
     .signUp{
         padding: 2px 9px;
+    }
+    .signUp a{
+        color: rgb(255, 250, 250);
     }
     .language{
         margin: auto;
         margin-left: 280px;
         display: none;
     }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .menu i{
+        position: absolute;
+    }
+    .bx-menu{
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .bx-exit{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        transition: .3s ease;
+
+    }
+    .colored{
+        width: 150px;
+        height: 135px;
+        background: rgb(0, 223, 253);
+        position: absolute;
+        top: -20px;
+        right: -60px;
+        z-index: -1;
+        transform: rotate(40deg);
+        transition: .4s ease;
+        border-radius: 10px;
+
+    }
+    .expand{
+        position: absolute;
+        width: 250px;
+        height: 274px;
+        transform: rotate(0deg);
+        top: 0px;
+        right: -60px;
+        z-index: -1;
+        background: rgb(0, 223, 253);
+        transition: .4s ease;
+        border-radius: 10px;
+    }
+
     /* destination */
     .destination{
         display: flex;
@@ -63,9 +129,9 @@
     }
     .underline{
         left: 100px;
-        width: 300px;
-        top: 180px;
-  
+        width: 250px;
+        top: 200px;
+        border: 1px solid;
     }
     .world-info{
         font-size: 13px;
@@ -84,31 +150,31 @@
     }
     #person{
         width: 470px;
-        margin-left: -90px;
+        margin-left: -130px;
    
     }
     .plane{
-        right: 340px;
+        right: 390px;
         top: 80px;
     }
     .plane2{
-        right: 0px;
+        right: 30px;
     }
     /*------------------hotel ---------------- */
     .hotels{
         margin-top: 380px;
-        margin-left: unset;
+        margin-left: 0px;
     }
     .category{
-        font-size: 16px;
+        font-size: 15px;
     }
     .offer{
         font-size: 35px;
     }
     .cards{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
         margin-left: 10px;
     }
     #cardlist{
@@ -126,22 +192,27 @@
     }
     /*----------------------flight chapter 3--------------------- */
     .flight{
-        margin-left: unset;
+        margin-left: 30px;
         margin-top: 40px;
     }
     .selling{
         font-size: 20px;
+        margin-right: 20px;
+  
     }
     .dest{
+        margin-right: 20px;
         font-size: 35px;
     }
     .traveling-places{
         display: flex;
         flex-direction: column;
+        margin-right: 20px;
         
     }
     #place-list{
-        width: 350px;
+        width: 300px;
+        margin-left: -90px;
 
     }
     .line{
@@ -152,7 +223,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 220%; 
-        margin-left: unset; 
+        margin-left: 15px; 
     }
     .booking-left{
         width: 100%;
@@ -211,7 +282,7 @@
     }
     .testimonials{
         margin-top: 200px;
-        margin-left: 0;
+        margin-left: 0px;
     }
     .layers{
         display: flex;
@@ -221,19 +292,22 @@
     width: fit-content;
     }
     .layer-2{
-        width: fit-content;
+        width: 200px;
+
     }
     .title{
         font-size: 15px;
+        margin-left: 20px;
     }
     .what-poeple{
+        margin-left: 20px;
         font-size: 40px;
     }
     .btn-change{
         margin-left: 50px;
     }
     .testimonial-cards{
-        width: 370px;
+        width: 350px;
         height: 260px;
         overflow: hidden;
         margin-left: 50px;
@@ -267,7 +341,7 @@
     .supportedimg{
         gap: 7px;
         justify-content: flex-start;
-        margin-left: -50px;
+        margin-left: -10px;
     }
     .supportedimg img{
         width: 65px;
@@ -275,13 +349,13 @@
     .subscribe{
         width: 370px;
         height: 300px;
-        margin-left: -50px;
+        margin-left: -25px;
         border-top-left-radius: 80px;
 
     }
     .subscribing{
-        font-size: 14px;
-        margin-top: 60px;
+        font-size: 17px;
+        margin-top: 0px;
     }
     input#email{
         width: 201px;
@@ -289,17 +363,22 @@
         border-radius: 5px;
         font-size: 14px;
     }::placeholder{
-        font-size: 13px;
-        padding-left: 5px;
+        font-size: 15px;
+        padding-left: 1px;
     }
     .subscribe-btn{
         width: 80px;
         height: 38px;
-        font-size: 13px;
+        font-size: 15px;
         border-radius: 5px;
     }
+    .bx-envelope{
+        font-size: 20px;
+        top: 9px;
+        left: 1px;
+    }
     .bxl-telegram{
-        bottom: -627%;
+        bottom: -647%;
         font-size: 20px;
     }
     .round{
@@ -314,7 +393,8 @@
         width: 95%;
         margin-left: unset;
         margin-top: 10px;
-        background: rgb(48, 54, 71);
+        background: rgb(28, 88, 253);
+        margin-left: 10px;
     }
     .container{
         margin-top: 450px;
@@ -329,15 +409,19 @@
     }
     .book-t{
         font-size: 23px;
+        color: rgb(22, 22, 22);
+
     }
     .names{
         font-size: 23px;
+        color: rgb(22, 22, 22);
     }
     .comp{
         gap: 5px;
     }
     .comp li a{
         font-size: 18px;
+        color: white;
         transition:all .6px ease;
     }
     .comp li a:hover{
@@ -348,7 +432,7 @@
         margin-left: 20px
     }
     .discover{
-        color: aliceblue;
+        color: rgb(252, 254, 255);
         margin-left: 20px;
     }
     

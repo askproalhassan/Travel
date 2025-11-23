@@ -82,7 +82,7 @@ body{
     left: 0;
 }
 #mini-img:nth-child(2){
-    visibility: hidden;
+    visibility: visible;
     margin-bottom: -150px;
 }
 #mini-img:nth-child(3){
@@ -129,7 +129,7 @@ body{
         height: 640px;
     }
     40%,50%{
-         width: 540px;
+        width: 540px;
         height: 640px;
     }
     60%,70%{
@@ -304,7 +304,7 @@ span.here:hover{
     color: blue;
 }
 .popup{
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 80px;
     border-radius: 7px;

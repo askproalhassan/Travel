@@ -19,7 +19,7 @@
         "country":[
             {
                 "Cname":"China,Honku",
-                "price":"$3,42k"
+                "price":"$ <span class = 'changing-price'>3,42</span>k"
             }
         ],
         "days":[

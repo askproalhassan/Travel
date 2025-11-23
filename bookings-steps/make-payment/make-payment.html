@@ -1,29 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <!-- navigation -->
-         <nav>
-            <div class="logo">Jad <span class="color">o</span><span class="color">o</span> </div>
-            <ul class="nav-links">
-                <li><a href="/index.html#destination">Destination</a></li>
-                <li><a href="/index.html#hotel">Hotels</a></li>
-                <li><a href="/index.html#flight">Flight</a></li>
-                <li><a href="/index.html#booking">Bookings</a></li>
-            </ul>
-         
-            <div class="language">
-                <select>
-                    <option value="EN">EN</option>
-                    <option value="TWI">TWI</option>
-                    <option value="DAGOMBA">GA</option>
-                </select>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choose</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="moble-view-payment.css">
+    </head>
+    <body>
+        <div class="main">
+            <!-- navigation -->
+            <nav>
+                <div class="logo">Jad <span class="color">o</span><span class="color">o</span> </div>
+                <ul class="nav-links">
+                    <li><a href="/index.html#destination">Destination</a></li>
+                    <li><a href="/index.html#hotel">Hotels</a></li>
+                    <li><a href="/index.html#flight">Flight</a></li>
+                    <li><a href="/index.html#booking">Bookings</a></li>
+                </ul>
+            
+                <div class="profile">
+                    <img src="" alt="profile" class="Myprofile">
+                    <h3 class="profileName">Lo it later</h3>
+                </div>
+            </nav>
+            <div class="payment-view">
+                <!--booking part  -->
+                <div class="left">
+                    <h3 class="confirm">Confirm your Book</h3>
+                    <h5 class="your-tour">Your tour</h5>
+                    <!-- date to start -->
+                    <div class="dates">
+                        <h5 class="date">Date</h5>
+                        <p class="days">
+                            
+                            <span class="Month"></span>
+                            <span class="-">-</span>
+                            <span class="day"></span>
+                            <span class="-">-</span>
+                            <span class="year"></span>
+                        </p>
+                    </div>
+                    <!-- Number of passengers -->
+                    <div class="numb-of-travellers">
+                        <h4 class="traveller">Traveller</h4>
+                        <p class="passenger">  <span> <span class="numbs">1</span> passenger</span> <i class='bx bx-edit-alt'></i></p>
+                    </div>
+                    <div class="number-info">
+                        <div class="dark"></div>
+                        <input type="number" name="" id="number-inputs">
+                    </div>
+                    <!-- creadt cards -->
+                    <div class="cards">
+                        <h3 class="creadit">Creadit Card</h3>
+
+                        <div class="cards-list">
+                            <img src="images/money.png" alt="" class="cards-item">
+                            <img src="images/paypal.png" alt="" class="cards-item">
+                            <img src="images/visa.png" alt="" class="cards-item">
+                        </div>
+                    </div>
+                    <div class="sample">
+                        <img src="images/full-master.png" alt="">
+                        <img src="images/full-visa.png" alt="">
+                    </div>
+                    <!-- Enter card input information  -->
+                    <div class="card-info">
+                        <h4 class="card-numb">Card Number</h4>
+                        <input type="text" name="" id="number-input">
+
+                        <!-- expiry and cvv div -->
+                        <div class="dates-info">
+
+                            <!-- expiry date -->
+                            <div class="expiry-date">
+                                <h5 class="expiry">Expiry Date</h5>
+                                <input type="date" name="" id="expiry-date">
+                            </div>
+
+                            <!-- CVC/CVV date -->
+                            <div class="CVC">
+                                <h5 class="expiry">CVC/CVV</h5>
+                                <input type="password" name="" id="password">
+                            </div>
+                        </div>
+                        <div class="save-btn">
+                            <input type="checkbox" name="" id="checkbox">
+                            <h5 class="save">Save Card</h5>
+                        </div>
+                        <button type="submit" class="submit">Confirm and Bookeed</button>
+                    </div>
+                </div>
+                <!-- products -->
+                 <div class="right">
+                    <div class="country-to-visit">
+
+                        <h3 class="country-name">Switzerland Hotels and Places to stay</h3>
+
+                        <p class="rating">⭐ 4.8 <span class="review">(122 reviews)</span></p>
+
+                        <img src="" alt="" class="country-seleccted">
+
+                        <h5 class="bedrooms"> <span class="a-room">1</span> bedroom + <span class="a-room">1</span> private room</h5>
+
+                        <div class="line"></div>
+
+                        <div class="check">
+                            <div class="check-in">
+                                <h3 class="in">Check in</h3>
+                                <span class="Month">1</span>
+                                <span class="-">-</span>
+                                <span class="day">2</span>
+                                <span class="-">-</span>
+                                <span class="year">3</span>                            </div>
+                            <div class="check-in">
+                                <h3 class="in">Check in</h3>
+                                <span class="Month">1</span>
+                                <span class="-">-</span>
+                                <span class="day">2</span>
+                                <span class="-">-</span>
+                                <span class="year">3</span>    
+                            </div>
+                            <div class="guest">
+                                <h3 class="in">Guest</h3>
+                                <span class="numb-of-guess">2 guest</span>
+                            </div>
+                        </div>
+                        <div class="fare-sum">
+                            <h3 class="title">Fare summary</h3>
+
+                            <div class="fares">
+                                <h3 class="prod">Tour fees <span class="tour-fees"></span></h3>
+                                <h3 class="prod">Discount <span class="discount">4%</span></h3>
+                                <h3 class="prod">Ocupancy fee <span class="money">$110</span></h3>
+                                <h3 class="prod">Services fee<span class="money">$20</span></h3>
+
+                                <h3 class="total">Total fee<span class="money">$20</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
-        </nav>
+        </div>    
+    </body>
+    <script src="js/main.js"></script>
+</html>

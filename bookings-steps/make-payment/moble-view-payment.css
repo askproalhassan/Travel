@@ -1,0 +1,193 @@
+@media (max-width: 320px) and (max-width:479px),(max-width: 600px){
+        nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: unset;
+        gap: 10px;
+   
+    }
+    .navbar{
+        width: 100%;
+        overflow: hidden;
+        height: 159px;
+        position: absolute;
+    }
+
+    .logo{
+        font-size: 1.9rem;
+        margin: 0;
+    }
+    .color::after{
+        bottom: 5px;
+        left:2px;
+    }
+    .nav-links{
+        display: none;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 50px;
+        transition:all .9s ease;
+    }
+    .nav-links li a{
+        color: white;
+        
+    }
+    .btn{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+  
+    .btnSigns{
+        display: flex;
+    }
+    .signUp{
+        padding: 2px 9px;
+    }
+    .signUp a{
+        color: rgb(255, 250, 250);
+    }
+    .language{
+        margin: auto;
+        margin-left: 280px;
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .menu i{
+        position: absolute;
+    }
+    .bx-menu{
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .bx-exit{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        transition: .3s ease;
+
+    }
+    .colored{
+        width: 150px;
+        height: 135px;
+        background: rgb(0, 223, 253);
+        position: absolute;
+        top: -20px;
+        right: -60px;
+        z-index: -1;
+        transform: rotate(40deg);
+        transition: .4s ease;
+        border-radius: 10px;
+
+    }
+    .expand{
+        position: absolute;
+        width: 250px;
+        height: 274px;
+        transform: rotate(0deg);
+        top: 0px;
+        right: -60px;
+        z-index: -1;
+        background: rgb(0, 223, 253);
+        transition: .4s ease;
+        border-radius: 10px;
+    }
+
+    .payment-view{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        }
+        /*================================== lift side =======================================*/
+    .confirm{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .your-tour{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .dates{
+        width: 290px;
+    }
+    .date{
+        font-size: 16px;
+    }
+    .numb-of-travellers{
+        width: 290px;
+    }
+    .traveller{
+        font-size: 16px;
+    }
+    .passenger{
+        gap: 200px;
+    }
+    .creadit{
+        font-size: 20px;
+    }
+    .cards-list{
+        gap: 5px;
+    }
+    .sample{
+        display: flex;
+        flex-direction: column;
+    }
+    .sample img:last-child{
+        margin-top: -100px;
+        margin-left: -10px;
+    }
+    /*<!-- Enter card input information  --> */
+   .card-numb{
+        margin-top: 10px;
+        font-size: 16px;
+   }
+   #number-input{
+        width: 316px;
+   }
+   .dates-info{
+        gap: 10px;
+   }
+   .expiry{
+    font-size: 15px;
+   }
+   .dates-info input{
+    width: 148px;
+    padding: 7px 7px;
+   }
+
+   #checkbox{
+        width: 15px;
+        height: 15px;
+    }
+   .save{
+    font-size: 15px;
+   }
+   .submit{
+    font-size: 13px;
+    padding: 7px 15px;
+   }
+   /*============================= right side==================================== */
+    .country-to-visit{
+        border: 1px solid white;
+        width: 390px;
+        margin-left: -30px;
+    }
+    .country-name{
+        font-size: 20px;
+    }
+    .rating{
+        font-size: 14px;
+    }
+}   

@@ -6,6 +6,7 @@
     <title>Choose</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/moble-view-choose.css">
 </head>
 <body>
     <div class="main">
@@ -26,100 +27,84 @@
                     <option value="DAGOMBA">GA</option>
                 </select>
             </div>
-            <div class="menu">
-                <i class='bx bx-menu'></i>
-            </div>
+           
         </nav>
         <!---------------------- container ----------------------->
         <div class="container">       
             <!-- slider colunm -->
-            <div class="slider">
-                <div class="filter">
-                    <h3 class="ft">Filters</h3>
-                    <div class="collections">
-                        <h3 class="ct">
-                            collections <i class='bx bx-chevron-up'></i>
-                            <ul class="dropdown">
-                                <li><a href="#culture">culture(23)</a></li>
-                                <li><a href="#water">Water Adventures(40)</a></li>
-                                <li><a href="#Sport">Sport Shows(32)</a></li>
-                                <li><a href="#Adventures">Adventures(20)</a></li>
-                                <li><a href="#mountains">Mountains & Hills(13)</a></li>
-                            </ul>
-                        </h3>
-                    </div>
-                </div>
-                <!-- person profile -->
-                <div class="person">
-                    <img src="" alt="me" class="me">
-                    <h4 class="Fname"> <span>😊</span></h4>
-                 </div>
-                 <!-- log in  -->
-                <div class="user">
-                    <div class="logs">
-                        <button class="setting"><i class='bx bx-cog'></i> Setting </button>
-                        <button class="Logout"><i class='bx bx-log-out'></i> Logout</button>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- content colunm -->
-            <div class="content">
-                <!-- head line -->
-                <div class="header">
-                    <h4 class="price">Price <i class='bx bx-chevron-up'></i>
+                <div class="slider">
                     
-                        <ul class="price-dropdown">
-                            <li><a href="#">Low to Hight</a></li>
-                            <li><a href="#">Hight to Low</a></li>
-                        </ul>
-                    </h4>
-                    <div class="sort">
-                        <h3 class="sort-by">SORT BY</h3>
-                        <select name="" id="select">
-                            <option value="Relevant">Newer</option>
-                            <option value="Popularity">Popularity</option>
-                            <option value="Rating">Rating</option>
-                            <option value="Discount">Discount</option>
-                        </select>
+
+                    <div class="identity">
+                        <h3 class="Fname"></h3>
+                        <img src="" class="me">
+                    </div>
+                    <div class="filtered-product">
+                        <h3 class="filter"> <a href="#cultured">Culture</a> </h3>
+                        <h3 class="filter"> <a href="#sport">Sport</a>  </h3>
+                        <h3 class="filter"><a href="#exploire">Exploiration</a>  </h3>
+                        <h3 class="filter"> <a href="#mountain">Mountains</a></h3>
+                        <h3 class="filter"><a href="#water">Waters</a> </h3>
+
+                        <div class="bxss">
+                            
+                            <a href="#cultured"><i class='bx bxs-castle'></i> </a> 
+                            <a href="#sport"><i class='bx bx-knife'> </i></a> 
+                            <a href="#exploire"><i class='bx bxl-postgresql'></i></a>
+                            <a href="#mountain"><i class='bx bxs-bullseye'></i></a>
+                            <a href="#water"><i class='bx bx-water' ></i> </a>
+                            
+                        </div>
                     </div>
                 </div>
-                <!-- places -->
-                <div class="main-work">
+                <div class="content">
+                    <!-- header -->
+                    <div class="header">
+                        <i class='bx bx-menu' id="slide-menu"></i>
 
-                    <!-- filters -->
-                    <div class="culture" id="culture">
-                        <h3 class="titled"><em>Culture</em></h3>
-                        <div class="cultured">
-
+                        <h4 class="price">Price <i class='bx bx-chevron-up'></i>
+                        
+                            <ul class="price-dropdown">
+                                <li><a href="#">Low to Hight</a></li>
+                                <li><a href="#">Hight to Low</a></li>
+                            </ul>
+                        </h4>
+                        <div class="sort">
+                            <h3 class="sort-by">SORT BY</h3>
+                            <select name="" id="select">
+                                <option value="Relevant">Newer</option>
+                                <option value="Popularity">Popularity</option>
+                                <option value="Rating">Rating</option>
+                                <option value="Discount">Discount</option>
+                            </select>
                         </div>
                     </div>
-                    <!-- filter 2 -->
-                    <div class="water" id="water">
-                         <h3 class="titled"><em>Water Adventures</em></h3>
-                        <div class="water-adventure">
-
-                        </div>
-                    </div>
-                    <!-- filter 3 -->
-                    <div class="Sport" id="Sport">
-                         <h3 class="titled"><em>Sport</em></h3>
-                        <div class="Sport-product">
-
-                        </div>
-                    </div>
-                    <!-- filter 3 -->
-                    <div class="Adventures" id="Adventures">
-                         <h3 class="titled"><em>Mountains</em></h3>
-                        <div class="mountains-product">
-
-                        </div>
-                    </div>
+                  <!-- Booking products -->
+                   <div class="main-work">
+                    <!-- cuture -->
+                       <h2 class="title" id="cultured">Culture</h2>
+                        <div class="cultured"></div>
+                    <!-- cuture -->
+                       <h2 class="title" id="sport">Sport</h2>
+                        <div class="sport"></div>
+                    <!-- cuture -->
+                       <h2 class="title" id="exploire">Exploiration</h2>
+                        <div class="exploire"></div>
+                    <!-- cuture -->
+                       <h2 class="title" id="mountain">Mountains</h2>
+                        <div class="  mountain"></div>
+                    <!-- cuture -->
+                       <h2 class="title" id="water">Water</h2>
+                        <div class="water"></div>
+                   </div>
 
                 </div>
             </div>
+            <div class="popup">
+                <h4 class="logedin" ></h4>
+            <div class="liner"></div>
         </div>
-    </div>
+        
     <script src="choose-main.js"></script>
 </body>
 </html>
