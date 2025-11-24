@@ -169,7 +169,7 @@ const storedData = () =>{
         // Hide popup again after 3 more seconds
         setTimeout(() => {
             popup.style.visibility = 'hidden';
-            window.location.href='./index.html'
+            window.location.href='/index.html'
         }, 5000);
     }, 1000);
 }
