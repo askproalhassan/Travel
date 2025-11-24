@@ -273,7 +273,7 @@ function dataStorage(){
                 logedin.innerHTML = "Created Succesfully"; 
                 setTimeout(()=>{
                     popup.style.visibility='hidden';
-                    window.location.href='/index.html';
+                    window.location.href='./index.html';
 
                 },5000)
             },1000)
