@@ -373,6 +373,19 @@ button.play:hover{
     margin-left: 60px;
     margin-top: 100px;
 }
+.flight-animation{
+    animation: flight-animation 6s linear 1;
+}
+@keyframes flight-animation {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
 .selling{
     font-size: 23px;
     font-family: Poppins;
@@ -466,6 +479,34 @@ button.play:hover{
 .booking-right{
     width: 50%;
 }
+/* booking animation */
+.bookings-animation-right{
+    animation: booking-right-animation 4s linear 1;
+}
+@keyframes booking-right-animation {
+    from{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bookings-animation-left{
+    animation: booking-left-animation 4s linear 1;
+}
+@keyframes booking-left-animation {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .write{
     cursor: pointer;   
 }
@@ -502,7 +543,7 @@ button.play:hover{
     bottom: o;
     width: 0;
     height: 100%;
-    background: linear-gradient(40deg,yellow,rgb(26, 26, 11),rgb(224, 212, 212));
+    background: linear-gradient(40deg,rgb(125, 235, 171),rgba(34, 190, 164, 0.61),rgb(224, 212, 212));
     z-index: -1;
     transition: all .6s ease;
     border-radius: 7px;
@@ -514,10 +555,10 @@ button.play:hover{
 #booking-list:hover{
     transform: scale(1.05);
     .choose{
-        color: rgb(245, 235, 235);
+        color: rgb(85, 82, 82);
     }
     .choose-discription{
-        color: rgb(230, 223, 223);
+        color: rgb(85, 82, 82);
     }
 }
 .choose{
