@@ -171,7 +171,7 @@ function BookingCard(){
                     if(index === 0){
                         bk.addEventListener('click',()=>{
                             if(localStorage.getItem("mail") && localStorage.getItem("security")){
-                                window.location.href='/bookings-steps/choose/choose.html';
+                                window.location.href='./bookings-steps/choose/choose.html';
                             }else{
                             setTimeout(() => {
                                         popup.style.visibility = 'visible';
@@ -188,7 +188,7 @@ function BookingCard(){
                     }else if(index === 1){
                             bk.addEventListener('click',()=>{
                             if(localStorage.getItem("mail") && localStorage.getItem("security")){
-                                window.location.href='/bookings-steps/make-payment/make-payment.html';
+                                window.location.href='./bookings-steps/make-payment/make-payment.html';
                             }else{
                             setTimeout(() => {
                                         popup.style.visibility = 'visible';
@@ -205,7 +205,7 @@ function BookingCard(){
                     }else if(index === 2){
                                  bk.addEventListener('click',()=>{
                             if(localStorage.getItem("mail") && localStorage.getItem("security")){
-                                window.location.href='/bookings-steps/reach/reach.html';
+                                window.location.href='./bookings-steps/reach/reach.html';
                             }else{
                             setTimeout(() => {
                                     alert('hello')

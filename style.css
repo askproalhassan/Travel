@@ -374,7 +374,7 @@ button.play:hover{
     margin-top: 100px;
 }
 .flight-animation{
-    animation: flight-animation 6s linear 1;
+    animation: flight-animation 3s linear 1;
 }
 @keyframes flight-animation {
     from{
