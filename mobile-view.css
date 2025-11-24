@@ -9,8 +9,8 @@
     }
     .navbar{
         width: 100%;
-        overflow: hidden;
         height: 159px;
+        z-index: 1;
         position: absolute;
     }
 
