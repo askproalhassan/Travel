@@ -110,18 +110,22 @@ select{
 }
 .profile{
     display: flex;
-    gap: 20px;
-    margin-left: 0px;
+    gap: 0px;
+    margin-right: 40px;
 }
 .Myprofile{
     border: 1px solid;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 .profileName{
-    font-size: 25px;
-    margin-top: 20px;
+    font-weight: 400;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(187, 226, 216);
 }
 /* payments view */
 
@@ -405,4 +409,30 @@ h3.title{
     border: 1px solid;
     padding: 8px 13px;
     border-radius: 7px;
+}
+/* black background */
+.black-background{
+    position: absolute;
+    bottom: -320px;
+    width: 100%;
+    height: 150%;
+    background: black;
+    visibility: hidden;
+}
+.classify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+}
+.booked-info{
+
+}
+.click{
+
+}
+i{
+    cursor: pointer;
 }

@@ -281,6 +281,7 @@ button.play:hover{
     right: 160px;
     z-index: -1;
 }
+.myProfile
 /*---------------------------------Hotel-------------------------------*/
 .hotels{
     height: 100vh;
@@ -983,12 +984,14 @@ button.apps svg{
 .myProfile{
     border: 1px solid black;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 #signup-btn{
     border: none;
-    margin-left: -30px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 

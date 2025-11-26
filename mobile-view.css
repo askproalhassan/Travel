@@ -392,7 +392,7 @@
         width: 95%;
         margin-left: unset;
         margin-top: 10px;
-        background: rgb(28, 88, 253);
+        background: linear-gradient(#0F2027, #203A43, #2C5364);
         margin-left: 10px;
     }
     .container{
@@ -404,16 +404,25 @@
     }
     .jado{
         font-size: 49px;
-        margin-top: 30px
+        margin-top: 30px;
+        color:#F5C542;
+        
+    }
+    .jado a{
+        font-size: 49px;
+        margin-top: 30px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-family: 'Poppin',sans-serif;
     }
     .book-t{
         font-size: 23px;
-        color: rgb(22, 22, 22);
+        color: #FFFFFF;
 
     }
     .names{
         font-size: 23px;
-        color: rgb(22, 22, 22);
+        color: #C7D3DD;
     }
     .comp{
         gap: 5px;

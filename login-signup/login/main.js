@@ -66,133 +66,111 @@ function hideAndshow(){
     // moving labels on inputs
     inputs.forEach((input,numb )=>{
         if(numb === 0){  
-            input.addEventListener('click',()=>{
-                labels.forEach((label, nb )=>{
-                    // first input
-                    if(nb === 0){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
+            input.addEventListener('input', () => {
+                labels.forEach((label, nb) => {
+                if (nb === 0) {
+                    if (input.value.trim() !== '') {
+                    // keep label up
+                    label.style.transform = 'translateY(-25px)';
+                    label.style.borderLeft = '1px solid black';
+                    label.style.borderRight = '1px solid black';
+                    label.style.padding = '0px 10px';
+                    label.style.background = 'white';
+                      label.style.color = 'rgb(174, 176, 179)';
+            } else {
+                // drop label back if empty
+                label.style.transform = 'translateY(0)';
+                label.style.borderLeft = 'none';
+                label.style.borderRight = 'none';
+                label.style.padding = 'unset';
+                label.style.background = 'none';
+                label.style.color = 'black';
+            }
+        }
+    });
+});
 
-
-                    }else if(input.value !== ''){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
-                    }
-                    else if(input.value === ''){
-                        label.style.transform = 'translateY(0)'
-                        label.style.borderLeft = 'none'
-                        label.style.borderRight = 'none'
-                        label.style.padding = 'unset'
-                        label.style.background= 'none'
-                        label.style.color= 'black';
-                    }
-                })
-            
-            })
         }
         // second input
         else if(numb === 1){
-             input.addEventListener('click',()=>{
-                labels.forEach((label, nb )=>{
-                    if(nb === 1){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
+           input.addEventListener('input', () => {
+        labels.forEach((label, nb) => {
+                if (nb === 1) {
+                    if (input.value.trim() !== '') {
+                      // keep label up
+                    label.style.transform = 'translateY(-25px)';
+                    label.style.borderLeft = '1px solid black';
+                                    label.style.borderRight = '1px solid black';
+                    label.style.padding = '0px 10px';
+                    label.style.background = 'white';
+                    label.style.color = 'rgb(174, 176, 179)';
+            } else {
+                // drop label back if empty
+                label.style.transform = 'translateY(0)';
+                label.style.borderLeft = 'none';
+                label.style.borderRight = 'none';
+                label.style.padding = 'unset';
+                label.style.background = 'none';
+                label.style.color = 'black';
+            }
+        }
+    });
+});
 
-                    }        else if(input.value !== ''){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
-                    }
-                    else if(input.value === ''){
-                        label.style.transform = 'translateY(0)'
-                        label.style.borderLeft = 'none'
-                        label.style.borderRight = 'none'
-                        label.style.padding = 'unset'
-                        label.style.background= 'none'
-                        label.style.color= 'black';
-                    }
-                })
-            
-            })
         }
         // third input
         else if(numb === 2){
-             input.addEventListener('click',()=>{
-                labels.forEach((label, nb )=>{
-                    if(nb === 2){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
+             input.addEventListener('input', () => {
+        labels.forEach((label, nb) => {
+            if (nb === 2) {
+                if (input.value.trim() !== '') {
+                // keep label up
+                label.style.transform = 'translateY(-25px)';
+                label.style.borderLeft = '1px solid black';
+                                label.style.borderRight = '1px solid black';
+                label.style.padding = '0px 10px';
+                label.style.background = 'white';
+                label.style.color = 'rgb(174, 176, 179)';
+            } else {
+                // drop label back if empty
+                label.style.transform = 'translateY(0)';
+                label.style.borderLeft = 'none';
+                label.style.borderRight = 'none';
+                label.style.padding = 'unset';
+                label.style.background = 'none';
+                label.style.color = 'black';
+            }
+        }
+    });
+});
 
-                    }        else if(input.value !== ''){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
-                    }
-                    else if(input.value === ''){
-                        label.style.transform = 'translateY(0)'
-                        label.style.borderLeft = 'none'
-                        label.style.borderRight = 'none'
-                        label.style.padding = 'unset'
-                        label.style.background= 'none'
-                        label.style.color= 'black';
-                    }
-                })
-            
-            })
         }
         // fouth input
         else if(numb === 3){
-             input.addEventListener('click',()=>{
-                labels.forEach((label, nb )=>{
-                    if(nb === 3){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
+            input.addEventListener('input', () => {
+        labels.forEach((label, nb) => {
+            if (nb === 3) {
+                if (input.value.trim() !== '') {
+                // keep label up
+                    label.style.transform = 'translateY(-25px)';
+                    label.style.borderLeft = '1px solid black';
+                                    label.style.borderRight = '1px solid black';
+                    label.style.padding = '0px 10px';
+                    label.style.background = 'white';
+                    label.style.color = 'rgb(174, 176, 179)';
+            } else {
+                // drop label back if empty
+                label.style.transform = 'translateY(0)';
+                label.style.borderLeft = 'none';
+                label.style.borderRight = 'none';
+                label.style.padding = 'unset';
+                label.style.background = 'none';
+                label.style.color = 'black';
+            }
+        }
+    });
+});
 
-                    }else if(input.value !== ''){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
-                    }
-                    else if(input.value === ''){
-                        label.style.transform = 'translateY(0)'
-                        label.style.borderLeft = 'none'
-                        label.style.borderRight = 'none'
-                        label.style.padding = 'unset'
-                        label.style.background= 'none'
-                        label.style.color= 'black';
-                    }
-                })
-            
-            })
         }
    })
     // showing view and hide icons on log in

@@ -1,18 +1,30 @@
+// adding profile
+const profile = ()=> {
+    const Myprofile = document.querySelector('.Myprofile')
+    const profileName = document.querySelector('.profileName')
+
+    Myprofile.src = localStorage.getItem('profile')
+    profileName.innerHTML = localStorage.getItem('first')
+};profile()
+
+
 // seting date for tour
-setInterval(()=>{
-    currentTime = new Date();
-    x = currentTime.toLocaleString('en-US', {weekday:'long'})
-    y = currentTime.toLocaleString('en-US', {month:'long'})
-    z = currentTime.getFullYear()
-    console.log(x,y,z)
-    const Month = document.querySelector('.Month')
-    const day = document.querySelector('.day')
-    const year = document.querySelector('.year')
-    Month.innerHTML = y
-    day.innerHTML = x
-    year.innerHTML = z
-    
-},1000)
+function setTiming(){
+    setInterval(()=>{
+        currentTime = new Date();
+        x = currentTime.toLocaleString('en-US', {weekday:'long'})
+        y = currentTime.toLocaleString('en-US', {month:'long'})
+        z = currentTime.getFullYear()
+        let Month = document.querySelector('.Month')
+        let day = document.querySelector('.day')
+        let year = document.querySelector('.year')
+        Month.innerHTML = y
+        day.innerHTML = x
+        year.innerHTML = z
+        
+    },1000)
+
+}setTiming()
 
 // number of passengers
 function numbOfPassengers(){
@@ -44,15 +56,13 @@ function numbOfPassengers(){
 
 
 
-// displaying the original fees 
-    let tourfees = document.querySelector('.tour-fees')
-    let discount = document.querySelector('.discount')
+    // displaying the original fees 
+    // let tourfees = document.querySelector('.tour-fees')
+    // let discount = document.querySelector('.discount')
     
-    let changingPrice = document.querySelector('.changing-price')
-    let myFees =JSON.parse( localStorage.getItem('selectedImage'))
-    console.log(myFees)
+    // let changingPrice = document.querySelector('.changing-price')
+    // let myFees =JSON.parse( localStorage.getItem('selectedImage'))
     
-    tourfees.innerHTML = myFees.price;
     //adding number of passenges to main value of price
     
 };numbOfPassengers()
@@ -64,10 +74,29 @@ function numbOfPassengers(){
 function tourDetails(){
     const countryName = document.querySelector('.country-name')
     const countrySeleccted = document.querySelector('.country-seleccted')
+    let main = document.querySelector('.main')
+    let blackBackground = document.querySelector('.black-background')
+
+    
+    const click = document.querySelector('.click i')
+    console.log(click)
+    
     
     let info = JSON.parse(localStorage.getItem("selectedImage"))
     // replacing with stored data on localstorage
-    countryName.innerHTML = info.country
-    countrySeleccted.src = info.src
+    if(!info){
+            blackBackground.style.visibility='visible'
+        click.addEventListener('click',()=>{
+            window.location.href = '/bookings-steps/choose/choose.html'
+            console.log('worked')
+        })
+    }
+    else{
+        countryName.innerHTML = info.country
+        countrySeleccted.src = info.src
+    }
+
+  
+
 
 }tourDetails();

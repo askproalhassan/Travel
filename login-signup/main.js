@@ -63,41 +63,35 @@ function hideAndshow(){
     // labels
     const labels = document.querySelectorAll('.labels')
     // inpus
-    const inputs = document.querySelectorAll('#place')
+const inputs = document.querySelectorAll('[id="place"]');
+    console.log(inputs)
     // moving labels on inputs
     inputs.forEach((input,numb )=>{
         if(numb === 0){  
-            input.addEventListener('click',()=>{
-                labels.forEach((label, nb )=>{
-                    if(nb === 0){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
+            input.addEventListener('input', () => {
+            labels.forEach((label, nb) => {
+            if (nb === numb) {
+                 if (input.value.trim() !== '') {
+                // keep label up
+                label.style.transform = 'translateY(-25px)';
+                label.style.borderLeft = '1px solid black';
+                                label.style.borderRight = '1px solid black';
+                label.style.padding = '0px 10px';
+                label.style.background = 'white';
+                label.style.color = 'rgb(174, 176, 179)';
+            } else {
+                // drop label back if empty
+                label.style.transform = 'translateY(0)';
+                label.style.borderLeft = 'none';
+                label.style.borderRight = 'none';
+                label.style.padding = 'unset';
+                label.style.background = 'none';
+                label.style.color = 'black';
+            }
+        }
+    });
+});
 
-
-                    }else if(input.value !== ''){
-                        label.style.transform = 'translateY(-25px)'
-                        label.style.borderLeft = '1px solid black'
-                        label.style.borderRight = '1px solid black'
-                        label.style.padding = '0px 10px'
-                        label.style.background= 'white'
-                        label.style.color= 'rgb(174, 176, 179)';
-                    }
-                    else if(input.value === ''){
-                        label.style.transform = 'translateY(0)'
-                        label.style.borderLeft = 'none'
-                        label.style.borderRight = 'none'
-                        label.style.padding = 'unset'
-                        label.style.color= 'black';
-                        label.style.background= 'none'
-
-                    }
-                })
-            
-            })
         }
         else if(numb === 1){
              input.addEventListener('click',()=>{
@@ -119,7 +113,7 @@ function hideAndshow(){
                         label.style.background= 'white'
                         label.style.color= 'rgb(174, 176, 179)';
                     }
-                    else if(input.value === ''){
+                    else{
                         label.style.transform = 'translateY(0)'
                         label.style.borderLeft = 'none'
                         label.style.borderRight = 'none'

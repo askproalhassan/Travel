@@ -1,8 +1,8 @@
 // navigation responsive
-const menu = document.querySelectorAll('.bx-menu,.bx-exit')
-const btnSigns = document.querySelector('.btn')
-const navList = document.querySelector('.nav-links')
-const colored= document.querySelector('.colored')
+const menu = document.querySelectorAll('.bx-menu,.bx-exit');
+const btnSigns = document.querySelector('.btn');
+const navList = document.querySelector('.nav-links');
+const colored= document.querySelector('.colored');
 
 function menuClick(){
     menu.forEach((btns,numbs)=>{
