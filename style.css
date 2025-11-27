@@ -11,6 +11,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 10px;
 }
 .logo{
     display: flex;
@@ -245,7 +246,7 @@ button.play:hover{
 .docer{
     position: absolute;
     right: 0px;
-    top: -120px;
+    top: -80px;
     z-index: -1;
     width: 700px;
 
@@ -286,17 +287,24 @@ button.play:hover{
 .hotels{
     height: 100vh;
     width: 92%;
-    margin-left: 60px;
-    margin-top: 250px;
-    opacity: 0;
-    transform: scale(100%);
-    transform: translateY(100px);
-    transition: all  1s linear ;
+    margin-left: 0px;
+    margin-top: -280px;
+    position: relative;
 }
-.hotels.fade-up{
-    opacity: 1;
-    transform: translateY(0px);
-    transform: scale(0px);
+.fade-up{
+    animation: fade-up 2s linear 1;
+}
+@keyframes fade-up {
+    from{
+        opacity: 0;
+        transform: scale(100%);
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        transform: scale(0px);
+    }
 }
 .category{
     text-align: center;
@@ -356,7 +364,7 @@ button.play:hover{
 }
 .Rectangle{
     position: absolute;
-    bottom: 260px;
+    bottom: -160px;
     width: 100px;
     height: 100px;
     left: 26%;
@@ -365,17 +373,17 @@ button.play:hover{
 .stars{
     position: absolute;
     right: 10px;
-    bottom: -68%;
+    bottom: -58%;
 }
 /*----------------------flight chapter 3--------------------- */
 .flight{
     height: 100vh;
     width: 92%;
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .flight-animation{
-    animation: flight-animation 3s linear 1;
+    animation: flight-animation 5s linear 1;
 }
 @keyframes flight-animation {
     from{
@@ -471,7 +479,7 @@ button.play:hover{
     height: 100vh;
     width: 92%;
     margin-left: 60px;
-    margin-top: 80px;
+    margin-top: -150px;
     display: flex;
 }
 .booking-left{
@@ -881,7 +889,7 @@ input#email{
     position: absolute;
     font-size: 50px;
     right: 33px;
-    bottom: -497%;
+    bottom: -387%;
     color: white;
     border-radius: 50%;
     background: #4a54e7;
@@ -902,7 +910,7 @@ input#email{
 footer{
     width: 92%;
     margin-left: 60px;
-    margin-top: 80px;
+    margin-top: 30px;
 
 }
 .container{
@@ -959,7 +967,7 @@ footer{
     box-shadow: 0 0 5px rgb(197, 194, 194);
 }
 .pngss svg:hover{
-    box-shadow: 0 0 20px rgb(197, 194, 194);
+    box-shadow: 0 0 10px rgb(197, 194, 194);
 }
 .discover{
     font-size: 24px;
