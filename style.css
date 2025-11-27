@@ -738,8 +738,7 @@ button.play:hover{
     margin-left: 50px;
     margin-top: 10px;
     background: white;
-    box-shadow: 0 0 10px #949191;
-
+    box-shadow: 0 0 10px #949191;    
 }
 #all-into:nth-child(2){
     top: 147px;
