@@ -197,4 +197,11 @@
     #number-inputs{
         left:10%;
     }
+    .dark{
+        width: 410px;
+        margin-left: -30px;
+        bottom: -190%;
+        height: 300%;
+
+    }
 }   
