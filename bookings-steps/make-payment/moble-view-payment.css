@@ -182,12 +182,19 @@
     .country-to-visit{
         border: 1px solid white;
         width: 390px;
-        margin-left: -30px;
+        margin-left: -20px;
     }
     .country-name{
         font-size: 20px;
     }
     .rating{
         font-size: 14px;
+    }
+    .country-seleccted{
+         width: 410px;
+         margin-left: -30px;
+    }
+    #number-inputs{
+        left:10%;
     }
 }   
