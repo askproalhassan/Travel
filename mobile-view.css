@@ -12,6 +12,7 @@
         height: 159px;
         z-index: 1;
         position: absolute;
+        overflow: hidden;
     }
 
     .logo{
@@ -90,7 +91,6 @@
         transform: rotate(40deg);
         transition: .4s ease;
         border-radius: 10px;
-
     }
     .expand{
         position: absolute;

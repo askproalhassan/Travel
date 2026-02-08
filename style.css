@@ -820,7 +820,7 @@ button.play:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 200px;
+    gap: 100px;
     margin-top: 140px;
 }
 .sp{
@@ -828,7 +828,7 @@ button.play:hover{
 }
 /* subscriptioon */
 .subscribe{
-    width: 1470px;
+    width: 1270px;
     height: 347px;
     display: flex;
     flex-direction: column;
@@ -881,7 +881,7 @@ input#email{
 }
 .round{
     position: absolute;
-    right: 50px;
+    right: 80px;
     width: 213px;
     opacity: 60%;
 }
